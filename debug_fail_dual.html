@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Tribusweb</title>
+        <link href="//fonts.googleapis.com/css?family=Source+Sans Pro:200italic,200,300italic,300,400italic,400,600italic,600,700italic,700,900italic,900" rel="stylesheet" type="text/css" />
+        <link href="/tribusweb/favicon.ico" rel="shortcut icon" /> 
+        <link href="/tribusweb/favicon.ico" rel="icon" type="image/ico" />
+        <link href="/interface/css/hacks.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/interface/css/ui/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/interface/css/ui/pms/jquery-ui-tema.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/interface/css/fg-menu.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/interface/css/dataTables.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/interface/css/ui-timepicker.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/interface/css/ui-combo.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/interface/css/ui-upload.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="/interface/css/geral2.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="/interface/css/ui-upload.css" rel="stylesheet" type="text/css" media="screen" />        
+        <link href="/tribusweb/css/Geral.css" rel="stylesheet" type="text/css" media="screen" />        
+        <script type="text/javascript" src="/interface/js/jquery.js"></script>
+        <script type="text/javascript" src="/interface/js/hacks.js"></script>
+        <script type="text/javascript" src="/interface/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/interface/js/jquery-dataTables.js"></script>
+        <script type="text/javascript" src="/interface/js/jquery-dataTables-TableTools.js"></script>
+        <script type="text/javascript" src="/interface/js/jquery-dataTables-ColVis.js"></script>
+        <script type="text/javascript" src="/interface/js/jquery-dataTables-RodaQuadrada.js"></script>
+        <script type="text/javascript" src="/interface/js/fg-menu.js"></script>
+        <script type="text/javascript" src="/interface/js/jquery-meiomask.js"></script>
+        <script type="text/javascript" src="/interface/js/ui-timepicker.js"></script>
+        <script type="text/javascript" src="/interface/js/ui-combo.js"></script>
+        <script type="text/javascript" src="/interface/js/ui-check-radio.js"></script>
+        <script type="text/javascript" src="/interface/js/ui-upload.js"></script>
+        <script type="text/javascript" src="/interface/js/BarraAcessibilidade/BarraAcessibilidade.js"></script>
+        <script type="text/javascript" src="/interface/js/geral.js"></script>
+        <script type="text/javascript" src="/tribusweb/js/Geral.js"></script>
+        <script type="text/javascript" src="/interface/js/ui-upload.js"></script>
+        </head>
+    <body class="ui-widget">
+        <input type="hidden" id="SEG_APLICACOES" value='' />
+        <div id="header">
+            <div class="content-header">
+                <div id="divBarraAcessibilidade" class="ui-widget-content ui-corner-bottom left overflow"></div>
+                <div id="topo" class="overflow">
+                    <a href="">
+                        <img class="left logo" src="/tribusweb/css/img/logo_tribus.png" alt="Logo do tribusweb" title="Tribusweb - Início" />
+                        <h1 style="margin-top: 4% !important;" class="left">Tribusweb<br /><small>Sistema Tribut&aacute;rio - Web</small></h1>
+                        <img class="right logopms" src="/interface/css/img/logo-pms.png" alt="Prefeitura de Santos" title="Prefeitura de Santos" />
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="tudo" class="center overflow">            
+            <div id="breadcrumb" class="overflow left"></div>            
+            <html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />  
+        <script type="text/javascript" src="/tribusweb/js/Geral/MensagemErroGeral.js"></script>
+    </head>
+    <body>
+        <div id="divTribusWeb" class="ui-widget overflow clear">
+            <div class="ui-widget-header ui-corner-top overflow">
+                <h2>TribusWeb - Mensagem</h2>
+            </div>            
+            <div id="cboaaexercicio-filtro" class="center ui-widget-content overflow ui-corner-bottom">
+                <br /><br />
+                <strong>N&atilde;o foram encontradas obriga&ccedil;&otilde;es dispon&iacute;veis nessa emiss&atilde;o, por favor verifique o n&uacute;mero digitado e/ou a situa&ccedil;&atilde;o da obriga&ccedil;&atilde;o.</strong>         
+                <br /><br />
+            </div>
+            <br /><br /><br /><br />
+            <div class="ui-widget-header ui-corner-bottom overflow">
+                <div class="divBotoes clear centerText">
+                    <button id="btnvoltar" name="btnvoltar">Voltar</button>                    
+                </div>
+            </div>
+        </div>
+   </body>
+</html>
+            <div id="rodape" class="centerText clear">
+                <h6>
+                    <strong>Tribusweb</strong><br />
+                    <strong>PMS</strong> - Prefeitura Municipal de Santos<br />
+                    <strong>SEGOV</strong> - Secretaria Municipal de Governo<br />
+                    <strong>DETIC</strong> - Departamento de Gest&atilde;o de Tecnologia de Informa&ccedil;&atilde;o e Comunica&ccedil;&otilde;es
+                </h6>
+            </div>
+        </div>
+        <div id="dialogTemplateSalvarConsulta" class="ui-helper-hidden" title="Salvar Consulta">
+            <label for="UCO_DLCONSULTA">Nome da Consulta *</label>
+            <input type="text" id="UCO_DLCONSULTA" name="UCO_DLCONSULTA" class="campoObrigatorio ui-widget-content ui-corner-all bloco-6" maxlength="50" value="" />
+        </div>
+        <div id="dialogTemplateLogoff" class="ui-helper-hidden">
+            <p class="justifyText">Você deseja sair do sistema?</p>
+        </div>
+        <div id="dialogTemplateErro" class="ui-helper-hidden" title="Erro">
+            <p class="justifyText"></p>
+        </div>
+        <div id="dialogTemplateMensagem" class="ui-helper-hidden">
+            <p class="justifyText"></p>
+        </div>
+        <div id="dialogTemplatePergunta" class="ui-helper-hidden">
+            <p class="justifyText"></p>
+        </div>
+        <div id="dialogTemplateSobre" class="ui-helper-hidden" title="Sobre">
+            <p class="justifyText">
+                <strong>Tribusweb</strong><br />
+                <strong>PMS</strong> - Prefeitura Municipal de Santos<br />
+                <strong>SEGOV</strong> - Secretaria Municipal de Governo<br />
+                <strong>DETIC</strong> - Departamento de Gest&atilde;o de Tecnologia de Informa&ccedil;&atilde;o e Comunica&ccedil;&otilde;es
+            </p>            
+            <p class="justifyText">
+                Suporte t&eacute;cnico - (13) 3201-5000
+            </p>
+        </div>
+    </body>
+</html>

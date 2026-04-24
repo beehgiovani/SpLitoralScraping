@@ -1,0 +1,15 @@
+# Ignorar pastas de dados
+data/
+**/data/
+
+# Ignorar ambientes virtuais e caches
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Ignorar backups e logs
+*.backup
+*.bak
+*.log

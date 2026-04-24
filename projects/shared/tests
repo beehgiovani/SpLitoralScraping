@@ -1,0 +1,25 @@
+import requests
+import re
+
+s = requests.Session()
+s.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"})
+s.get("https://egov.santos.sp.gov.br/tribusweb/")
+
+inscricao = "41172004002"
+
+r1 = s.get(f"https://egov.santos.sp.gov.br/tribusweb/Imobiliario/AvisoObrigacao/Principal/2026/{inscricao}")
+m = re.search(r'id="OBR_NUOBRIGACAO0"\s+value="(\d+)"', r1.text)
+if m:
+    id_lanc = m.group(1)
+    s.get(f"https://egov.santos.sp.gov.br/tribusweb/Imobiliario/AvisoObrigacao/ListarParcelaObrigacao/2026/{id_lanc}")
+    
+    url_aviso = f"https://egov.santos.sp.gov.br/tribusweb/Geral/BoletoAvisoObrigacao/Principal/1/2026/{id_lanc}/4/06/04/2026/{inscricao}"
+    s.get(url_aviso)
+    
+    url_download = "https://egov.santos.sp.gov.br/tribusweb/Geral/BoletoDocumento/Principal"
+    r_pdf = s.get(url_download, headers={"Referer": url_aviso})
+    
+    print(r_pdf.status_code)
+    print(r_pdf.content[:50])
+else:
+    print("No ID found")

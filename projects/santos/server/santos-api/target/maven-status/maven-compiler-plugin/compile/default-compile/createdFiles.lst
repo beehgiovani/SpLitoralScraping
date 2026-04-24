@@ -1,0 +1,5 @@
+com\metromargeo\model\Economia.class
+com\metromargeo\service\ImovelService.class
+com\metromargeo\config\SecurityConfig.class
+com\metromargeo\repository\ImovelRepository.class
+com\metromargeo\service\ImovelService$1.class
